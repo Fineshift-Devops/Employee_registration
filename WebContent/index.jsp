@@ -58,7 +58,7 @@ div.ex {
 		</form>
 	</div>
 	<div class="footer">
-  	 	<p>Deployed with Github actions on AWS<br>
+  	 	<p>Deployed with Github actions Enterprise <br>
   		</p>
 	</div>
 
