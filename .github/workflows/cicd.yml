@@ -3,14 +3,11 @@ name: CI/CD
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
 
     runs-on: self-hosted
-
     steps:
     - uses: actions/checkout@v3
     - name: Build with Maven
@@ -20,7 +17,6 @@ jobs:
   deploy:
       needs: build
       runs-on: self-hosted
-
       steps:
       - name: war file
         run: sudo cp /home/aishwarya/actions-runner/_work/employee_registration/employee_registration/target/employee_registration-2.2-SNAPSHOT.war /opt/tomcat/webapps
