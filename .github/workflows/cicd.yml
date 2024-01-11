@@ -21,13 +21,13 @@ jobs:
     #    path: /home/fs-swapnil/actions-runner/_work/Employee_registration/Employee_registration/target/employee_registration-2.2-SNAPSHOT.war
     #    retention-days: 5
 
-      
-  deploy:
-      needs: build
-      runs-on: ubuntu-latest
-      steps:
-      - name: war file
-        run: sudo cp /home/fs-swapnil/actions-runner/_work/Employee_registration/Employee_registration/target/*.war /opt/tomcat/webapps
+  
+  # deploy:
+  #     needs: build
+  #     runs-on: ubuntu-latest
+  #     steps:
+  #     - name: war file
+  #       run: sudo cp /home/fs-swapnil/actions-runner/_work/Employee_registration/Employee_registration/target/*.war /opt/tomcat/webapps
 
 
 
